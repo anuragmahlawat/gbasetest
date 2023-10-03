@@ -1,5 +1,7 @@
 import streamlit as st
 from streamlit_modal import Modal
+import gspread
+from google.oauth2 import service_account
 
 st.title("Profile")
 
@@ -10,6 +12,7 @@ with col1:
 with col2:
     st.text("Ryan Tan")
     st.text("Bio")
+    st.button("Add new listing")
 
 st.header("Listings")
 
