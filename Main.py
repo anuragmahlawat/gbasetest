@@ -15,8 +15,8 @@ credentials = service_account.Credentials.from_service_account_info(
 client = gspread.authorize(credentials)
 
 # Authentication details to access google sheet-----------------------------------------------------------------------
-gc = gspread.service_account()
-db = gc.open_by_key("1NOCJrg21reC-QfWkBaR-PAGXm3sAJb8Yb_Q4Fr78WUM")
+# gc = gspread.service_account()
+db = client.open_by_key("1NOCJrg21reC-QfWkBaR-PAGXm3sAJb8Yb_Q4Fr78WUM")
 # --------------------------------------------------------------------------------------------------------------------
 
 # Variables relating to listings and amounts of listings---------------------------------------------------------------
